@@ -1,7 +1,8 @@
 [source]
-git = "https://github.com/pop-os/cosmic-monitor.git"
-branch = "master"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://github.com/pop-os/cosmic-monitor.git)
+git = "https://github.com/aphrody-labs/cosmic-monitor.git"
+upstream = "https://github.com/pop-os/cosmic-monitor.git"
+rev = "a79ce9e7d2259a82150d56978fb7a094bd4ec2f0"
 [build]
 template = "custom"
 dependencies = [

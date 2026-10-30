@@ -1,5 +1,7 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/ion.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/ion.git)
+git = "https://github.com/aphrody-labs/redox-ion.git"
+upstream = "https://gitlab.redox-os.org/redox-os/ion.git"
+rev = "e9b3ca48b7ab6444498d5c3aa902d471ce29f759"
 [build]
 template = "cargo"

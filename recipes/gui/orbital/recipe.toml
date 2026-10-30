@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/orbital.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/orbital.git)
+git = "https://github.com/aphrody-labs/orbital.git"
+upstream = "https://gitlab.redox-os.org/redox-os/orbital.git"
+rev = "6231a7d67ac5d206d5d6903c8d0e6731ae8630ab"
 [build]
 template = "cargo"
 

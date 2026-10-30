@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/pkgar.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/pkgar.git)
+git = "https://github.com/aphrody-labs/pkgar.git"
+upstream = "https://gitlab.redox-os.org/redox-os/pkgar.git"
+rev = "d10d42b143b03b141f9792a48cfd3ef059867051"
 [build]
 template = "cargo"
 cargopackages = [

@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/relibc.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/relibc.git)
+git = "https://github.com/aphrody-labs/relibc.git"
+upstream = "https://gitlab.redox-os.org/redox-os/relibc.git"
+rev = "ad0c4794e522e35533d6e177fd5d1825e6491078"
 [build]
 template = "custom"
 compiler = "gcc-no-lto"

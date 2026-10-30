@@ -1,7 +1,8 @@
 [source]
-git = "https://github.com/pop-os/cosmic-text.git"
-branch = "main"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://github.com/pop-os/cosmic-text.git)
+git = "https://github.com/aphrody-labs/cosmic-text.git"
+upstream = "https://github.com/pop-os/cosmic-text.git"
+rev = "f1a3461f3e8df67d2bbcfafb8bc61dc7aee5b2a6"
 [build]
 template = "custom"
 dependencies = [

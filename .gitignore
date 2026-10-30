@@ -23,3 +23,6 @@ source.tar
 source.tar.tmp
 target
 wget-log
+
+# Bun OS factory inputs (installed by bun factory/os/rust-desktop.ts)
+/bunos/

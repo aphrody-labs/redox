@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/bootloader.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/bootloader.git)
+git = "https://github.com/aphrody-labs/redox-bootloader.git"
+upstream = "https://gitlab.redox-os.org/redox-os/bootloader.git"
+rev = "11b85164383c1dfc0415a36b389f6eb999b9b2f5"
 [build]
 template = "custom"
 script = """

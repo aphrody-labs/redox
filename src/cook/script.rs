@@ -151,6 +151,16 @@ COOKBOOK_CARGO="${COOKBOOK_REDOXER}"
 COOKBOOK_CARGO_FLAGS=(
     --locked
 )
+# Bun OS: one shared [patch] table (factory/os/rust-desktop/cargo-patch.toml in aphrody-labs/bun-os) redirects
+# libcosmic, iced, winit, softbuffer and cosmic-protocols to the aphrody-labs forks used by the Linux COSMIC
+# session and the web client. The factory installs it as bunos/cargo-patch.toml; lockfiles are re-resolved.
+BUNOS_CARGO_PATCH="${BUNOS_CARGO_PATCH:-${COOKBOOK_ROOT}/bunos/cargo-patch.toml}"
+if [ -f "${BUNOS_CARGO_PATCH}" ]
+then
+    COOKBOOK_CARGO_FLAGS=(
+        --config "${BUNOS_CARGO_PATCH}"
+    )
+fi
 # cargo template using cargo install
 function cookbook_cargo {
     "${COOKBOOK_CARGO}" install \

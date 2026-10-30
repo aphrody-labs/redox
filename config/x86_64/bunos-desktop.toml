@@ -1,0 +1,42 @@
+# Bun OS Redox desktop: upstream desktop.toml plus the Bun OS forks.
+# Built by `bun factory/os/rust-desktop.ts redox` in aphrody-labs/bun-os (REPO_BINARY=1; the
+# packages patched for Bun OS are forced to "source" so they compile from the aphrody-labs forks
+# against the shared cargo-patch.toml: libcosmic with the Aphrody theme, Orbital palette, launcher).
+
+include = ["../desktop.toml"]
+
+[general]
+filesystem_size = 1024
+
+[packages]
+# Patched for Bun OS: always built from the aphrody-labs forks.
+orbital = "source"
+orbutils = "source"
+cosmic-edit = "source"
+cosmic-files = "source"
+cosmic-term = "source"
+
+[[files]]
+path = "/etc/hostname"
+data = "bunos-redox"
+
+# Bun OS package repository first; upstream Redox stays as the fallback source.
+[[files]]
+path = "/etc/pkg.d/10_bunos"
+data = "https://aphrody.com/repo/redox"
+
+[[files]]
+path = "/usr/lib/os-release"
+data = """
+PRETTY_NAME="Bun OS Redox 0.9.0"
+NAME="Bun OS Redox"
+VERSION_ID="0.9.0"
+VERSION="0.9.0"
+ID="bunos-redox"
+ID_LIKE="redox-os"
+
+HOME_URL="https://aphrody.com/"
+DOCUMENTATION_URL="https://aphrody.com/os/"
+SUPPORT_URL="https://github.com/aphrody-labs/bun-os/issues"
+BUG_REPORT_URL="https://github.com/aphrody-labs/bun-os/issues"
+"""

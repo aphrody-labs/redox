@@ -1,7 +1,8 @@
 [source]
-git = "https://github.com/pop-os/cosmic-settings.git"
-branch = "master"
-shallow_clone = true
+# Bun OS: aphrody-labs fork, pinned (upstream https://github.com/pop-os/cosmic-settings.git)
+git = "https://github.com/aphrody-labs/cosmic-settings.git"
+upstream = "https://github.com/pop-os/cosmic-settings.git"
+rev = "58aeb65244b8830880e8b6ced89dcd25663f20b1"
 [build]
 template = "custom"
 script = """

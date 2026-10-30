@@ -1,6 +1,8 @@
 [source]
-git = "https://github.com/pop-os/cosmic-edit.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://github.com/pop-os/cosmic-edit.git)
+git = "https://github.com/aphrody-labs/cosmic-edit.git"
+upstream = "https://github.com/pop-os/cosmic-edit.git"
+rev = "fb850179fb0b5597f043ae1891761c5b639fc270"
 [build]
 template = "custom"
 dependencies = [

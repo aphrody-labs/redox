@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/orbutils.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/orbutils.git)
+git = "https://github.com/aphrody-labs/orbutils.git"
+upstream = "https://gitlab.redox-os.org/redox-os/orbutils.git"
+rev = "b1fe594838873852c49d14f0b50f5902c6ed72f0"
 [build]
 template = "custom"
 script = """

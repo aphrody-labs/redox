@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/redoxfs.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/redoxfs.git)
+git = "https://github.com/aphrody-labs/redoxfs.git"
+upstream = "https://gitlab.redox-os.org/redox-os/redoxfs.git"
+rev = "db847d87c68052618d1427537c7277293a626a18"
 [build]
 template = "custom"
 script = """

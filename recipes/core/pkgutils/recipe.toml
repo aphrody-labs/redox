@@ -1,6 +1,8 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/pkgutils.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/pkgutils.git)
+git = "https://github.com/aphrody-labs/redox-pkgutils.git"
+upstream = "https://gitlab.redox-os.org/redox-os/pkgutils.git"
+rev = "fe21bfd95d869cafd356bcdec4d1a81739ede5ee"
 [build]
 template = "cargo"
 cargopath = "pkg-cli"

@@ -1,6 +1,8 @@
 [source]
-git = "https://github.com/pop-os/cosmic-store.git"
-shallow_clone = true
+# Bun OS: aphrody-labs fork, pinned (upstream https://github.com/pop-os/cosmic-store.git)
+git = "https://github.com/aphrody-labs/cosmic-store.git"
+upstream = "https://github.com/pop-os/cosmic-store.git"
+rev = "c7b36a2fdccf1ce88944793af67c3664413ee560"
 [build]
 template = "custom"
 dependencies = [

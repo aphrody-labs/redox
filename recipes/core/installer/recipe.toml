@@ -1,5 +1,7 @@
 [source]
-git = "https://gitlab.redox-os.org/redox-os/installer.git"
-
+# Bun OS: aphrody-labs fork, pinned (upstream https://gitlab.redox-os.org/redox-os/installer.git)
+git = "https://github.com/aphrody-labs/redox-installer.git"
+upstream = "https://gitlab.redox-os.org/redox-os/installer.git"
+rev = "2d2416c151e880bd68799b5c6cf46d019d964675"
 [build]
 template = "cargo"
